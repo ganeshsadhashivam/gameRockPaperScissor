@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="winner-page"></section>
+    <section id="total-content">
+      <section>
+        <div class="box-container">
+          <!-- <div class="box-container"> -->
+          <div class="actions-box">
+            <ul>
+              <li id="rock-btn" value="rock">ROCK</li>
+              <li id="paper-btn" value="paper">PAPER</li>
+              <li id="scissor-btn" value="scissor">SCISSOR</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="score-box">
+              <li>
+                computer score
+                <span id="computer-score" value="0"></span>
+              </li>
+              <li>
+                your score
+                <span id="player-score" value="0"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="icons-container">
+        <div class="icons-box">
+          <div>
+            <div id="rock">
+              <div id="rock-selected-two">
+                <div id="rock-selected-three">
+                  <p id="rock-selected"></p>
+                  <img src="./rock.png" alt="rock" />
+                </div>
+              </div>
+            </div>
+            <p id="line-box-1"></p>
+            <div id="paper">
+              <p id="paper-selected"></p>
+              <img src="./paper.png" alt="paper" />
+            </div>
+          </div>
+          <p id="line-box-2"></p>
+          <p id="line-box-3"></p>
+        </div>
+        <div class="scissor-box">
+          <div class="scissor-box" id="scissor">
+            <p id="scissor-selected"></p>
+            <img src="./scissor.png" alt="scissor" />
+          </div>
+        </div>
+      </section>
+      <section class="games-rules-section">
+        <img src="./crosssign.png" alt="crossign" id="crossign" />
+        <div class="game-rules" id="game-rules">
+          <h5>Game Rules</h5>
+          <ul>
+            <li>
+              Rock beats scissors, scissors beat paper, and paper beats rock.
+            </li>
+            <li>
+              Agree ahead of time whether you’ll count off “rock, paper,
+              scissors, shoot” or just “rock, paper, scissors.”
+            </li>
+            <li>
+              Use rock, paper, scissors to settle minor decisions or simply play
+              to pass the time
+            </li>
+            <li>
+              If both players lay down the same hand, each player lays down
+              another hand
+            </li>
+          </ul>
+        </div>
+        <p id="rules">Rules</p>
+        <p id="next">Next</p>
+      </section>
+      <section class="result">
+        <p id="result"></p>
+        <button id="play-again">playAgain</button>
+        <p>Moves Left : <span id="moves"></span></p>
+      </section>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
